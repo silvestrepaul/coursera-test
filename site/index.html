@@ -19,27 +19,82 @@
 			color:black;
 			text-align: left;
 		}
-		#name {
-			color: brown;
-			background-color: green;
+		#piedepagina {
+			color: darkblue;
+			background-color: lightgray;
 			opacity: 1;
-			width: 40px;
+			width: 400px;
 		}
+		/*combining selectors on style;
+		p.big (only tag p with class div="big" will be affected)
+		article > p (only tag p inside article will be affected, only direct childs)
+		article p (only tag p inside article will be affected, no matter if its inside other tag)
+		**Last two is read from left to right.
+		*/
+		p a{
+			font-style: italic;
+			font-size: 20px;
+		}
+		ol ul{
+			font-style: italic;
+			font-weight: bolder;
+		}
+/*For pseudo class:
+
+ */
+		ul>li {
+			list-style: none;
+		}
+		a:link{
+			text-decoration: none;
+			background-color: white;
+			border: 1px solid blue;
+			color: blue;
+			display: block;
+			width: 200px;
+			text-align: left;
+			margin-bottom: 1px;
+		}
+		a:visited {
+			text-decoration: none;
+			background-color: white;
+			border: 1px solid black;
+			color: black;
+			display: block;
+			width: 200px;
+			text-align: left;
+			margin-bottom: 1px;
+		}
+		a:hover, a:active {
+			background-color: gray;
+			color: black;
+		}
+		section li:nth-child(1) {
+			color: green;
+			width: 200px;
+		}
+
 	</style>
 </head>
 <body>
 <h1 class="parrafo">Hello Paul! This is just the beggining of the journey, enjoy it!!! </h1>
 		<p> <a href="#piedepagina">Ir a pie de pagina <a> </p>
 		<p> <a href="https://facebook.com" target="_blank">Ir a facebook <a> </p>
-		<div>	<img src="https://lh3.googleusercontent.com/j3V1TsNz6-SSKH_E2tVFf0UtnbJYV0uGBB7Df-hcHnSVmKZubHJzkUcf9WhZxkEWmWRRfqm2f6J2_fKfZbXkBnG6UPKojhPGkkA-9b1UsVaceRW_9dv9s5WUcU5ss8x1TqXHJIJUztw=w600-h315-p-k" width="400" height"400" alt="Just a picture">	</div>
-		<div>
+		<div>	<a href="https://lh3.googleusercontent.com/j3V1TsNz6-SSKH_E2tVFf0UtnbJYV0uGBB7Df-hcHnSVmKZubHJzkUcf9WhZxkEWmWRRfqm2f6J2_fKfZbXkBnG6UPKojhPGkkA-9b1UsVaceRW_9dv9s5WUcU5ss8x1TqXHJIJUztw=w600-h315-p-k" target="_blank"><img src="https://lh3.googleusercontent.com/j3V1TsNz6-SSKH_E2tVFf0UtnbJYV0uGBB7Df-hcHnSVmKZubHJzkUcf9WhZxkEWmWRRfqm2f6J2_fKfZbXkBnG6UPKojhPGkkA-9b1UsVaceRW_9dv9s5WUcU5ss8x1TqXHJIJUztw=w600-h315-p-k" width="400" height"4000" alt="Just a picture">	</div></a>
+		<section>
 			<ol>
-				<li id="name">Hola1</li>
-				<li><span>Hola2</span></li>
+				<li id="name">Hola 1</li>
+				<li><span>Hola 2</span></li>
 				<ul>
-					<li>Hola2.1</li>
+					<li>Hola 2.1</li>
 				</ul>
-		</div>
+		</section>
+		<div>
+			<ul>
+				<li><a href="#piedepagina">Ir a pie de pagina <a></li>
+				<li> <a href="https://facebook.com" target="_blank">Ir a facebook <a> </li>
+			</ul>
+	</div>
 </body>
 <footer id="piedepagina">Create by PMM &copy; Copyright</footer>
 </html>
