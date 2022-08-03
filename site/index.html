@@ -5,15 +5,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Start of New  Beginning</title>
 	<style>
+	title {
+		color:red;
+	}
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		background-color: lightgray;
+		margin: 20px;
+	}
 	.parrafo {
-			color: lightgray;
+			color: black;
 			font-size: 20px;
-			width: 299px;
+			width: auto;
 			text-align: center;
 		}
 		div, p {
-			color:red;
-			text-align: left;
+			color:black;
+			text-align: justify;
+			font-family: Arial, helvetica, sans-serif;
+			font-size: 10px;
+			text-transform: full-width;
+			font-style: italic;
+			color: black;
 		}
 		#div {
 			color:black;
@@ -23,7 +38,9 @@
 			color: darkblue;
 			background-color: lightgray;
 			opacity: 1;
-			width: 400px;
+			width:auto;
+			text-align: left;
+			font-size: 12px;
 		}
 		/*combining selectors on style;
 		p.big (only tag p with class div="big" will be affected)
@@ -49,11 +66,13 @@
 			text-decoration: none;
 			background-color: white;
 			border: 1px solid blue;
+			padding: 5px;
 			color: blue;
 			display: block;
-			width: 200px;
-			text-align: left;
+			width: 410px;
+			text-align: center;
 			margin-bottom: 1px;
+			box-sizing: border-box; /*Muy importante de tener en cuenta*/
 		}
 		a:visited {
 			text-decoration: none;
@@ -61,7 +80,7 @@
 			border: 1px solid black;
 			color: black;
 			display: block;
-			width: 200px;
+			width: auto;
 			text-align: left;
 			margin-bottom: 1px;
 		}
@@ -73,14 +92,13 @@
 			color: green;
 			width: 200px;
 		}
-
 	</style>
 </head>
 <body>
 <h1 class="parrafo">Hello Paul! This is just the beggining of the journey, enjoy it!!! </h1>
 		<p> <a href="#piedepagina">Ir a pie de pagina <a> </p>
 		<p> <a href="https://facebook.com" target="_blank">Ir a facebook <a> </p>
-		<div>	<a href="https://lh3.googleusercontent.com/j3V1TsNz6-SSKH_E2tVFf0UtnbJYV0uGBB7Df-hcHnSVmKZubHJzkUcf9WhZxkEWmWRRfqm2f6J2_fKfZbXkBnG6UPKojhPGkkA-9b1UsVaceRW_9dv9s5WUcU5ss8x1TqXHJIJUztw=w600-h315-p-k" target="_blank"><img src="https://lh3.googleusercontent.com/j3V1TsNz6-SSKH_E2tVFf0UtnbJYV0uGBB7Df-hcHnSVmKZubHJzkUcf9WhZxkEWmWRRfqm2f6J2_fKfZbXkBnG6UPKojhPGkkA-9b1UsVaceRW_9dv9s5WUcU5ss8x1TqXHJIJUztw=w600-h315-p-k" width="400" height"4000" alt="Just a picture">	</div></a>
+		<div>	<a class="imagen" href="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png" target:"_blank"; width=400px; height=200px;><img src="http://www.cursosgis.com/wp-content/uploads/2017/06/lenguajes_1.png"; width=400px; height=200px; alt="Just a picture">	</div></a>
 		<section>
 			<ol>
 				<li id="name">Hola 1</li>
@@ -95,6 +113,23 @@
 				<li> <a href="https://facebook.com" target="_blank">Ir a facebook <a> </li>
 			</ul>
 	</div>
+	<div id="lipsum">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio pretium, volutpat nisl a, mattis ante. Cras justo diam, aliquam ut cursus in, commodo lacinia nibh. Sed dictum massa lorem. Nunc interdum vehicula lectus. Mauris auctor luctus metus sit amet malesuada. Phasellus nec neque venenatis felis auctor hendrerit. Sed et tellus eget sem tincidunt lobortis non ac arcu.
+		</p>
+		<p>
+			Vivamus lacus turpis, tristique sed sem non, fringilla semper metus. Proin vestibulum est orci, efficitur sollicitudin risus malesuada non. Proin egestas eleifend massa ut placerat. Aliquam bibendum nunc sed nisl lobortis feugiat. Fusce maximus ullamcorper mattis. Nulla commodo augue eu aliquam lacinia. Donec quis magna nibh.
+		</p>
+		<p>
+			Ut at risus purus. Duis et tempor odio, eget varius nibh. Sed porttitor neque a ex placerat, interdum scelerisque libero tincidunt. Morbi ut vehicula nibh, vitae finibus enim. Proin vitae viverra mi. Sed sed leo et odio condimentum sollicitudin. Interdum et malesuada fames ac ante ipsum primis in faucibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque fermentum condimentum urna et volutpat. Suspendisse potenti. Nulla dapibus placerat nisi, non malesuada nunc consequat nec. Phasellus sollicitudin, tortor sed consectetur tincidunt, nisl quam elementum nisi, a efficitur felis risus et neque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse a enim tortor. Vestibulum elementum et mauris ut imperdiet. Donec porta lacinia eros, et egestas ipsum ultricies vitae.
+		</p>
+		<p>
+			Aliquam ac nibh risus. Pellentesque aliquam neque eu laoreet mattis. Nam vulputate purus sit amet orci aliquet, vitae sollicitudin dolor elementum. Vestibulum rutrum eros at nulla pellentesque, eu pellentesque justo accumsan. Donec sit amet ex quam. Nulla eu auctor lectus. Cras tempus blandit dui, vel consequat magna faucibus nec. Duis faucibus tincidunt fermentum. Mauris egestas velit diam, ac placerat nunc accumsan in. Praesent luctus mauris elit, a molestie arcu maximus et. Donec venenatis in ipsum at tempus.
+		</p>
+		<p>
+			Sed fringilla massa eget sem sagittis molestie. Nullam id magna eu justo ultricies eleifend. Nulla placerat purus vitae lacus suscipit, at interdum dolor vehicula. Ut ornare neque nec tortor convallis dictum. Nunc vitae hendrerit nunc. Quisque laoreet ante turpis, quis pharetra est varius vitae. Cras facilisis tincidunt varius. Praesent ac hendrerit odio, et congue metus. In a mi ligula. Phasellus id massa arcu. Donec in auctor velit. Etiam ligula justo, ultrices in metus sit amet, accumsan pulvinar arcu. Sed arcu velit, auctor at consectetur non, efficitur et est. Integer tristique risus nec libero ultricies hendrerit.
+		</p></div>
+
 </body>
 <footer id="piedepagina">Create by PMM &copy; Copyright</footer>
 </html>
