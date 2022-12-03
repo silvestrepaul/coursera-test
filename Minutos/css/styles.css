@@ -82,7 +82,7 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid black;
+  border: 1px solid red;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
