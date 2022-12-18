@@ -82,9 +82,123 @@ body {
 }
 
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid red;
+  border: 1px solid black;
 }
 .navbar-header button.navbar-toggle {
   clear: both;
   //margin-top: -30px;
 }
+
+#call-btn{
+  background-color: white;
+}
+
+.btn-group {
+  color: black;
+  background-color: white;
+}
+
+.instagram:hover {
+  color: white;
+  background-color: red;
+}
+
+.whatsapp:hover {
+  color: white;
+    background-color: green;
+}
+
+.facebook:hover {
+  color: white;
+  background-color: blue;
+}
+
+.facebook {color: blue; }.whatsapp {color: green;} .instagram {  color: red; }
+
+
+.botones {
+  background-color: inherit;
+}
+
+button {
+  background-color: inherit;
+}
+
+button:focus, .btn:focus{
+  outline: none;
+box-shadow: none;
+}
+
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/logomdm_medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+     .navbar-brand {
+        padding-top: 10px;
+        height: 100px;
+      }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 70px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 8vw; /* 1vw = 1% of viewport width */
+
+  }
+  .navbar-brand p { /* ANDREA name */
+    font-size: .6em;
+    margin-top: 10px;
+    font-size: 1.8vw;
+  }
+
+#collapsable-nav a { /* Collapsed nav menu text */
+  font-size: 1.0em;
+}
+
+
+#collapsable-nav a span { /* Collapsed nav menu glyph */
+   font-size: 1em;
+   margin-right: 5px;
+ }
+
+#call-btn{
+  background-color: white;
+}
+
+#call-btn > a {
+     width: 50px;
+     height: 50px;
+     vertical-align: middle;
+     text-align: center;
+     font-size: 1.5em;
+     letter-spacing: .2em;
+     display:block;
+     margin: 0 0px;
+     padding: 10px;
+     border: 0px solid #fff;
+     background-color: inherit;
+   }
+ }
