@@ -157,14 +157,27 @@ hr {
   width:90%;
 }
 
-#slide1, #slide2, #slide3{
-  width: 100%;
+#slide1 {
+  background: url('../images/slide1_large.png');
+  background-repeat: no-repeat;
+  width: auto;
   height: 400px;
+  background-size: 100%;
+  background-position:center;
 }
 
-#slide{
+#slide2 {
+  background: url('../images/jumbotron_768.jpg');
+  background-repeat: no-repeat;
+  width: auto;
+  height: 400px;
+  background-size: 100%;
+  background-position:center;
+}
+
+#slide3{
   background: url('../images/logomdm-large.png');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   width: auto;
   height: 400px;
   background-size: 100%;
