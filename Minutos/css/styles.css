@@ -157,11 +157,6 @@ hr {
   width:90%;
 }
 
-#slide1, #slide2, #slide3{
-  width: 100%;
-  height: 400px;
-}
-
 #slide2{
   background: url('../images/jumbotron_768.jpg');
   background-repeat: repeat;
