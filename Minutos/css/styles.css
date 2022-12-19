@@ -157,6 +157,15 @@ hr {
   width:90%;
 }
 
+#slide1{
+  background: url('../images/slide1_large.png');
+  background-repeat: repeat;
+  width: auto;
+  height: 400px;
+  background-size: 100%;
+  background-position:center;
+}
+
 #slide2{
   background: url('../images/jumbotron_768.jpg');
   background-repeat: repeat;
@@ -166,7 +175,7 @@ hr {
   background-position:center;
 }
 
-#slide{
+#slide3{
   background: url('../images/logomdm-large.png');
   background-repeat: repeat;
   width: auto;
