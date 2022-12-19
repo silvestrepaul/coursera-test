@@ -94,52 +94,52 @@ body {
 }
 
 .btn-group {
-  color: black;
   background-color: white;
 }
 
-.instagram:hover {
+.facebook, .facebook:focus {color: blue; background-color: white;}.whatsapp, .whatsapp:focus {color: green;background-color: white;} .instagram, .instagram:focus{color: red;background-color: white;} .tiktok, .tiktok:focus {color:black; background-color: white;}
+
+
+.instagram:hover, .instagram:active {
   color: white;
   background-color: red;
 }
 
-.whatsapp:hover {
+.whatsapp:hover, .whatsapp:active, .whatsapp:focus {
   color: white;
   background-color: green;
 }
 
-.facebook:hover {
+.facebook:hover, .facebook:active {
   color: white;
   background-color: blue;
   text-decoration: none;
 }
 
-.tiktok:hover {
+.tiktok:hover, .tiktok:active {
   color: white;
   background-color: black;
   text-decoration: none;
 }
-
-.facebook {color: blue; }.whatsapp {color: green;} .instagram {color: red;} .tiktok {color:black}
-
 
 .botones {
   background-color: inherit;
   margin-bottom: 20px;
 }
 
-button {
+.btn-group button{
   background-color: inherit;
-  padding: 10px;
+  padding: 8px;
 }
 
-.botones:hover {
+.botones:hover, .botones:active {
   text-decoration: none;
 }
 
-button:focus, .btn:focus{
+button:focus, .btn:focus {
   outline: none;
   box-shadow: none;
+  text-decoration: none;
 }
 
 #aboton:hover, #aboton a:focus,#aboton:visited {
@@ -160,7 +160,6 @@ hr {
 #slide1, #slide2, #slide3{
   width: 100%;
   height: 400px;
-  margin: auto;
 }
 
 #slide{
