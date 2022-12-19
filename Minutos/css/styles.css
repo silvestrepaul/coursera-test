@@ -105,7 +105,7 @@ body {
 
 .whatsapp:hover {
   color: white;
-    background-color: green;
+  background-color: green;
 }
 
 .facebook:hover {
@@ -118,18 +118,43 @@ body {
 
 .botones {
   background-color: inherit;
+  margin-bottom: 20px;
 }
 
 button {
   background-color: inherit;
+  padding: 10px;
 }
 
 button:focus, .btn:focus{
   outline: none;
-box-shadow: none;
+  box-shadow: none;
 }
 
+#myCarousel{
+  height: 400px;
+  width: 90%;
+  margin: 5%;
+  padding: auto;
+}
 
+hr {
+  width:90%;
+}
+
+#slide1, #slide2, #slide3{
+  width: 100%;
+  height: 400px;
+  margin: auto;
+}
+
+#slide{
+  background: url('../images/logomdm-large.png') 400px;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 400px;
+  background-position:center;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
