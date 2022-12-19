@@ -149,10 +149,11 @@ hr {
 }
 
 #slide{
-  background: url('../images/logomdm-large.png') 400px;
-  background-repeat: no-repeat;
+  background: url('../images/logomdm-large.png');
+  background-repeat: repeat;
   width: auto;
   height: 400px;
+  background-size: 100%;
   background-position:center;
 }
 
