@@ -160,6 +160,8 @@ hr {
 #slide1{
   background: url('../images/Slide1.png');
   background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
   background-size: 100%;
   background-position:center;
 }
