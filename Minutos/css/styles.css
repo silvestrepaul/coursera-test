@@ -91,7 +91,7 @@ body {
 
 /*Main */
 
-main .carousel{
+main .carousel
     padding:0;
 }
 
@@ -213,7 +213,15 @@ background-color: #777;
 
 }
 
-.rounded-circle{border-radius: 50%!important}
+.rounded-circle{border-radius: 50%!important;}
+
+.small-pic{
+  width:140px;
+  height: 140px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
