@@ -96,7 +96,6 @@ main .carousel
 }
 
 /* Botones */
-
 #call-btn{
   background-color: white;
 }
@@ -209,9 +208,7 @@ background-color: #777;
   text-align: justify;
 }
 
-.marketing .col-lg-4 .container {
-
-}
+.marketing .col-lg-4 .container {}
 
 .rounded-circle{border-radius: 50%!important;}
 
@@ -222,6 +219,37 @@ background-color: #777;
   text-align: center;
   margin: auto;
 }
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+#hours, #address {
+  line-height: 2;
+}
+#hours > span, #address > span {
+  font-size: 1.3em;
+}
+#address p {
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials {
+  font-style: italic;
+}
+#testimonials p:nth-child(2) {
+  margin-top: 25px;
+}
+/* END FOOTER */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
