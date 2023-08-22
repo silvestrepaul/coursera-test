@@ -2,6 +2,16 @@
 @font-face {font-family: 'whitestar';  src: url('WhiteStar.otf');}
 @font-face {font-family: 'cocobiker'; src: url('CocoBiker.ttf');}
 
+
+.container-fluid .row{
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto;
+  border: 10px solid black;
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -77,25 +87,23 @@ nav.scrolled .nav-item a{
 /*Construye una vida*/
 #portada{
   height:auto;
-  padding-top: 0px;
+  width: 100%;
+  padding: 0;
   margin:0;
-  border:0;
+  border:1px solid black;
   letter-spacing: 0.5em;
   text-align: justify;
-  background: url('../images/FondoMain.png') no-repeat;
+  background: url('../images/FondoMain.png');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  width: 100%;
-}
-
-#portada .row {
-  width:10%;
 }
 
 #solucion{
   padding-top: 180px;
   padding-left: 40px;
   height:650px;
+  width:100%;
 }
 
 #construye {
@@ -106,9 +114,10 @@ nav.scrolled .nav-item a{
 }
 
 /*IMAGEN ANDY SOSA*/
-#meditacion{
-  height:650px;
-}
+/*#meditacion{
+  height:auto;
+  width: 10%;
+} */
 
 #sec1a2{
   width: 100%;
@@ -119,6 +128,7 @@ nav.scrolled .nav-item a{
 /*Container for Proposito*/
 #Propuesta  {
   height: auto;
+  width: 100%;
   background-color: #3028af;
   background-size: 100%;
 }
