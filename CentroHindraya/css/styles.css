@@ -8,7 +8,6 @@
   padding-left:0;
   margin-right:auto;
   margin-left:auto;
-  border: 10px solid black;
 }
 
 
@@ -28,6 +27,8 @@ nav {
   width: 100%;
   background: linear-gradient(to bottom, #000, #0003 0%,#); /* background when scroll is in the top */
   transition: background 1s; /* control how smooth the background changes */
+  margin-right: 0;
+  margin-left: 0;
 }
 
 /*NAVBAR SCROLL*/
@@ -86,41 +87,35 @@ nav.scrolled .nav-item a{
 /*PRIMER CONTAINER*/
 /*Construye una vida*/
 #portada{
-  height:auto;
+  height: auto;
   width: 100%;
-  padding: 0;
-  margin:0;
-  border:1px solid black;
-  letter-spacing: 0.5em;
-  text-align: justify;
   background: url('../images/FondoMain.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
 }
 
+/*CONSTRUYE UNA VIDA... esta en seccion Responsive Design bajo nombre #solucion*/
 #solucion{
   padding-top: 180px;
   padding-left: 40px;
   height:650px;
-  width:100%;
 }
 
 #construye {
-  color: #fff;
+   color: #fff;
   font-family: Arial;
   text-transform: uppercase;
   font-size: 3em;
 }
 
 /*IMAGEN ANDY SOSA*/
-/*#meditacion{
-  height:auto;
-  width: 10%;
-} */
+/*Imagen in Responsive Design*/
 
 #sec1a2{
   width: 100%;
+  padding:0;
+  margin:0;
   color: #000;
 }
 
@@ -223,4 +218,135 @@ figure.scrolled .fixed {
   border: 1px solid black;
   width:auto;
   padding:10px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+
+  /*PRIMER SECCION*/
+  /*CONSTRUYE UNA VIDA...*/
+  #solucion{
+    padding-top: 180px;
+    padding-left: 40px;
+    height:650px;
+  }
+
+  #meditacion{
+    background: url('../images/Fondo_main2.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+  /*CONSTRUYE UNA VIDA...*/
+  #solucion{
+    padding-top: 180px;
+    padding-left: 40px;
+    height:650px;
+  }
+
+  #construye {
+     color: #fff;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+
+  #meditacion{
+    background: url('../images/Fondo_main2.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+  }
+}
+
+/********** Small devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+
+  /*CONSTRUYE UNA VIDA...*/
+  #solucion{
+    padding-top: 180px;
+    padding-left: 40px;
+    height: 300px;
+  }
+
+  #construye {
+     color: #fff;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  #meditacion{
+    background: url('../images/Fondo_main2_sm.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /*CENTRO HIDRAYA*/
+  .navbarName {
+    color: #fff;
+    font-family: 'cocobiker', cursive;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  /*AFTER SCROLLING: CENTRO HIDRAYA*/
+  nav.scrolled .navbarName {
+    color: purple;
+    font-family: 'cocobiker', cursive;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+
+  /*by andrea sosa*/
+  .navbarAutor {
+    color: #fff;
+    font-family: 'whitestar', cursive;
+    text-transform: lowercase;
+    font-size: .1em;
+  }
+
+  /*After Scrolling: by andrea sosa */
+  nav.scrolled .navbarAutor {
+    color: purple;
+    font-family: 'whitestar', cursive;
+    text-transform: lowercase;
+    font-size: 1em;
+  }
+
+  /*CONSTRUYE UNA VIDA...*/
+  #solucion{
+    padding-top: 120px;
+    padding-left: 40px;
+    height: 250px;
+  }
+
+  #construye {
+    color: #fff;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-size: 1.5em;
+  }
+
+  #meditacion{
+    background: url('../images/Fondo_main2_sm.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: auto;
+    height: 410px;
+  }
+ }
+
+ /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+
 }
