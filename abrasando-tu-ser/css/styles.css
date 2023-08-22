@@ -6,10 +6,23 @@ body {
 }
 
 /** HEADER **/
+
+@font-face{
+  font-family: 'whitestar';
+  src: url('WhiteStar.otf');
+}
+
+
+@font-face {
+  font-family: 'cocobiker';
+  src: url('CocoBiker.ttf');
+}
+
+
 #header-nav {
-  background-color: lightblue;
-  border-radius: 0;
-  border: 0;
+  background-color: inherit;
+  border-radius: 0px;
+  border: 1px solid Black;
 }
 
 #logo-img {
@@ -19,6 +32,10 @@ body {
   margin: 10px 15px 10px 0;
 }
 
+.navbar-header{
+  
+}
+
 .navbar-brand {
   padding-top: 15px;
   vertical-align: middle;
@@ -26,41 +43,43 @@ body {
 }
 
 .navbar-brand h1 { /* Restaurant name */
-  font-family: 'clicker script', cursive;
+  font-family: 'cocobiker', cursive;
   letter-spacing: 8px;
-  color: Black;
+  color: white;
   font-size: 2em;
   text-transform: lowercase;
-  font-weight: bold;
+  font-weight: lighter;
   text-shadow: 0;
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: .75;
 }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
 .navbar-brand p { /* Kosher cert */
   color: white;
-  text-transform:capitalize;
-  font-size: .7em;
+  font-family: 'whitestar', cursive;
+  text-transform: lowercase;
+  font-size: 1.2em;
   margin-top: 5px;
   margin-bottom: -5px;
-}
-.navbar-brand p span { /* Star-K */
   vertical-align: middle;
-  font-family: 'Anonymous Pro', sans-serif;
-  font-weight: bold;
-  letter-spacing: 0.5px;
+  text-align: left;
+  letter-spacing: 4px;
 }
 
 #nav-list {
   margin-top: 20px;
 }
 #nav-list a {
-  color: black;
+  color: white;
   text-align: center;
+  font-weight: bold;
+  letter-spacing: .05em;
 }
+
 #nav-list a:hover {
   background: #E7E7E7;
 }
@@ -91,8 +110,16 @@ body {
 
 /*Main */
 
-main .carousel
+main .carousel{
     padding:0;
+}
+
+#Curso1{
+  white-space:pre-wrap;
+}
+
+.strike {
+  text-decoration: line-through;
 }
 
 /* Botones */
