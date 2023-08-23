@@ -15,9 +15,6 @@ body {
   padding: 0;
 }
 
-
-.container{width: 100%;}
-
 /*NAVBAR*/
 nav {
   position: -webkit-sticky;
@@ -29,13 +26,15 @@ nav {
   background: linear-gradient(to bottom, #000, #0003 0%,#); /* background when scroll is in the top */
   transition: background 1s; /* control how smooth the background changes */
   margin: 0;
-  padding:0;
+  padding: 0;
 }
 
 /*NAVBAR SCROLL*/
 nav.scrolled {
   background: #fff;
 }
+
+
 
 /*CENTRO HIDRAYA*/
 .navbarName {
@@ -80,7 +79,6 @@ nav.scrolled .navbarAutor {
 nav.scrolled .nav-item a{
   font-weight: bolder;
   color: purple;
-
 }
 
 .nav-item .dropdown-menu{
@@ -90,7 +88,7 @@ nav.scrolled .nav-item a{
 /*PRIMER CONTAINER*/
 /*Construye una vida*/
 #portada{
-  height: auto;
+  height: 100vh;
   width: 100%;
   background: url('../images/FondoMain.png');
   background-repeat: no-repeat;
@@ -101,12 +99,12 @@ nav.scrolled .nav-item a{
 /*CONSTRUYE UNA VIDA... esta en seccion Responsive Design bajo nombre #solucion*/
 #solucion{
   padding-top: 180px;
-  padding-left: 40px;
+  padding-left: 0px;
   height:650px;
 }
 
 #construye {
-   color: #fff;
+  color: #fff;
   font-family: Arial;
   text-transform: uppercase;
   font-size: 3em;
@@ -117,8 +115,6 @@ nav.scrolled .nav-item a{
 
 #sec1a2{
   width: 100%;
-  padding:0;
-  margin:0;
   color: #000;
 }
 
@@ -131,31 +127,27 @@ nav.scrolled .nav-item a{
   background-size: 100%;
 }
 
-#T2R1C1 {
+#DivProposito {
   text-align: left;
   vertical-align: middle;
   border: 1px solid black;
-  padding-left:0;
+  padding:0;
 }
 
-#T2R1C1 p{
+#DivProposito p{
   color: white;
   letter-spacing: .2em;
-  font-size: 50px;
+  font-size: 100%;
   font-weight: bold;
-  padding-left: 20px;
-  padding-top: 30px;
 }
 
 #T2R1C2 {
   color: white;
   letter-spacing: .1em;
   font-size: 25px;
-  padding-left: 20px;
-  padding-top: 30px;
 }
 
-/*fixed-wrap background image*/
+/*fixed-wrap background image */
 figure {
   position: relative;
   height:650px;
@@ -216,7 +208,6 @@ figure.scrolled .fixed {
 #Impulsa {
   border: 1px solid black;
   width:auto;
-  padding:10px;
 }
 
 /********** Large devices only **********/
@@ -226,15 +217,16 @@ figure.scrolled .fixed {
   /*CONSTRUYE UNA VIDA...*/
   #solucion{
     padding-top: 180px;
-    padding-left: 40px;
     height:650px;
   }
+
+  .navbar-brand {padding:5%;}
 
   #meditacion{
     background: url('../images/Fondo_main2.png');
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: auto;
+    background-size: 90%;
   }
 }
 
@@ -249,7 +241,7 @@ figure.scrolled .fixed {
   }
 
   #construye {
-     color: #fff;
+    color: #fff;
     font-family: Arial;
     text-transform: uppercase;
     font-size: 3em;
@@ -270,7 +262,7 @@ figure.scrolled .fixed {
   /*CONSTRUYE UNA VIDA...*/
   #solucion{
     padding-top: 180px;
-    padding-left: 40px;
+    padding-left: 0px;
     height: 300px;
   }
 
@@ -292,11 +284,22 @@ figure.scrolled .fixed {
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
   /*CENTRO HIDRAYA*/
+  #logoImg{
+    display: none;
+    visibility: hidden;
+  }
+
+  .navbar-brand {padding:0%;}
+
+  .navbar-nav{background-color: #fff; color:purple;}
+
+  .nav-item a{color:purple!important;}
+
   .navbarName {
     color: #fff;
     font-family: 'cocobiker', cursive;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 6vw;
   }
 
   /*AFTER SCROLLING: CENTRO HIDRAYA*/
@@ -304,7 +307,7 @@ figure.scrolled .fixed {
     color: purple;
     font-family: 'cocobiker', cursive;
     text-transform: uppercase;
-    font-size: 1em;
+    font-size: 6vw;
   }
 
   /*by andrea sosa*/
@@ -312,7 +315,7 @@ figure.scrolled .fixed {
     color: #fff;
     font-family: 'whitestar', cursive;
     text-transform: lowercase;
-    font-size: 1em;
+    font-size: 6vw;
   }
 
   /*After Scrolling: by andrea sosa */
@@ -320,34 +323,52 @@ figure.scrolled .fixed {
     color: purple;
     font-family: 'whitestar', cursive;
     text-transform: lowercase;
-    font-size: 1em;
+    font-size: 6vw;
   }
 
   /*CONSTRUYE UNA VIDA...*/
   #solucion{
-    padding-top: 120px;
-    padding-left: 40px;
-    height: 250px;
+    padding-top: 25vh;
+    padding-left: 0px;
+    vertical-align: middle;
+    height: 50vh;
   }
 
   #construye {
     color: #fff;
     font-family: Arial;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 7vw;
+    text-align: center;
+    padding: 5%;
   }
 
+/*Foto Meditacion*/
   #meditacion{
     background: url('../images/Fondo_main2_sm.png');
+    height: 50vh;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: auto;
-    height: 410px;
+  }
+
+/*SEGUNDA SECCION: Propuesta*/
+  #DivProposito {
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid black;
+    padding:0;
+  }
+
+  #DivProposito p{
+    color: white;
+    letter-spacing: .2em;
+    font-size: 8vw;
+    font-weight: bold;
   }
  }
 
  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
-  body {
-  }
+
 }
