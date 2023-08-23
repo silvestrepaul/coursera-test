@@ -217,6 +217,7 @@ figure.scrolled .fixed {
     /*CONSTRUYE UNA VIDA...*/
     #solucion{
       padding: inherit;
+      padding: 15% 30px 30px 0;
       vertical-align: middle;
       height:100%;
     }
@@ -240,7 +241,7 @@ figure.scrolled .fixed {
       background: url('../images/Fondo_main2.png');
       background-repeat: no-repeat;
       background-position: center bottom;
-      background-size: auto;
+      background-size: contain;
     }
 }
 
@@ -272,7 +273,7 @@ figure.scrolled .fixed {
     background: url('../images/Fondo_main2.png');
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: auto;
+    background-size:contain;
   }
 }
 
