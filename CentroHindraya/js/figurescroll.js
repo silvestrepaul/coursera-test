@@ -1,5 +1,3 @@
-var figure = document.querySelector('figure');
-
 window.onscroll = function() {
   //call functions
   funcNavbar();
