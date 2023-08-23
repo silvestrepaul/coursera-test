@@ -248,7 +248,7 @@ figure.scrolled .fixed {
 @media (min-width: 992px) and (max-width:1199px) {
   /*CONSTRUYE UNA VIDA...*/
   #solucion{
-    padding: inherit;
+    padding-top:20vh;
     height:100%;
   }
 
@@ -408,7 +408,7 @@ figure.scrolled .fixed {
     height: 50%;
     background-repeat: no-repeat;
     background-position: center bottom;
-    background-size: 50vh;
+    background-size: 100%;
   }
 
 /*SEGUNDA SECCION: Propuesta*/
